@@ -35,7 +35,7 @@ def assemble_render_set_name(scene_path):
     return nice_name
 
 
-def assemble_cmd(render_name, import_set, scene_path, chunk_size=40):
+def assemble_cmd(render_name, import_set, scene_path, chunk_size=100):
     return " ".join(
         [
             f'"{get_renderpal_exe()}"',
