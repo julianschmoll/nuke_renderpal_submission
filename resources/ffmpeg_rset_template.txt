@@ -1,0 +1,38 @@
+<RenderSet>
+	<Renderer>Frog FFmpeg/Default version</Renderer>
+	<Values>
+		<c:v>
+			<Value>libx264</Value>
+		</c:v>
+		<crf>
+			<Value>20</Value>
+		</crf>
+		<framerate>
+			<Value>25</Value>
+		</framerate>
+		<i>
+			<Value>$input</Value>
+		</i>
+		<movflags>
+			<Value>+faststart -y</Value>
+		</movflags>
+		<outdir>
+			<Value>$out_dir</Value>
+		</outdir>
+		<outfile>
+			<Value>$out_file</Value>
+		</outfile>
+		<r>
+			<Value>25 $out_dir/$out_file</Value>
+		</r>
+		<scene>
+			<Value>FFmpeg Render</Value>
+		</scene>
+		<start_number>
+			<Value>$start_frame</Value>
+		</start_number>
+		<vf>
+			<Value>format=yuv420p</Value>
+		</vf>
+	</Values>
+</RenderSet>
